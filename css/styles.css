@@ -35,7 +35,7 @@ body {
     "footer";
   grid-template-columns: 1fr;
   grid-gap: 40px;
-  grid-template-rows: 1fr 800px 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
 }
 
 .content,
