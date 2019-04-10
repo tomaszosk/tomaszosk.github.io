@@ -34,15 +34,15 @@ body {
     "content"
     "footer";
   grid-template-columns: 1fr;
-  grid-gap: 40px;
-  grid-template-rows: 1fr 5fr 1fr;
+  grid-gap: 20px;
+  grid-template-rows: 180px 1fr 250px;
 }
 
 .content,
 .sidebar,
 .footer{
 
-  padding: 2em;
+  padding: 1em;
 }
 nav ul {
   margin: 0;
@@ -53,7 +53,7 @@ nav ul {
 
 nav li {
   list-style: none;
-  padding: 2em;
+  padding: 1em;
 }
 
 nav li a {
