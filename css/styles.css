@@ -28,7 +28,7 @@ body {
 
 }
 .container {
-  font-size: 2em;
+  font-size: 1em;
   width: 100%;
   height: 100vh;
   display: grid;
@@ -38,12 +38,10 @@ body {
     "footer";
   grid-template-columns: 1fr;
   grid-gap: 0px;
-  grid-template-rows: 160px 1fr 220px;
+  grid-template-rows: 80px 1fr 120px;
 }
 
-.content {
-  display: flex;
-}
+.content,
 .sidebar,
 .footer{
 
@@ -65,7 +63,7 @@ nav li {
 
 nav li a {
   color: black;
-  font-weight: 500;
+  font-weight: 600;
   opacity: 0.5;
   text-decoration: none;
   transition: 0.3s;
@@ -78,7 +76,7 @@ nav li a:hover {
 
 .hero {
   max-width: 960px;
-  margin: auto;
+  margin: 50px;
   text-align: center;
 }
 
@@ -101,11 +99,11 @@ nav li a:hover {
   display: inline-block;
   text-decoration: none;
   color: black;
-  font-weight: 700;
-  background: #34E87C;
+  font-weight: 600;
+  background: #57E98D;
   padding: 0.5em 2em;
   border-radius: 40px;
-  margin: 1em 0;
+  margin: 2em;
   transition: 0.3s;
 }
 .action-btn:hover {
@@ -115,7 +113,7 @@ nav li a:hover {
 
 footer ul {
   max-width: 640px;
-  margin: 1em auto;
+  margin: 1em;
   padding: 0;
   text-align: center;
   display: flex;
@@ -140,11 +138,13 @@ footer p {
 
 @media (min-width: 1040px) {
   .container {
+    width: 100%;
     grid-template-areas:
       "sidebar content"
       "sidebar footer";
-      grid-template-columns: 300px 1fr;
-      grid-template-rows: 1fr auto;
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: 1fr 120px;
+
   }
   nav ul {
     display: flex;
@@ -152,40 +152,66 @@ footer p {
     flex-direction: column;
   }
   .sidebar {
+    font-size: 1.3em;
     background: linear-gradient(to top,
-      rgba(0, 255, 59, 0.8),
-      rgba(23, 142, 229, 1));
-      padding-top: 3em;
+      rgba(0, 255, 59, 0.6),
+      rgba(47, 235, 112, 0.55),
+      rgba(23, 142, 229, 0.76));
+      justify-content:center;
+      padding-top: 0em;
   }
   .footer {
     background: linear-gradient(to top,
-      rgba(0, 255, 59, 0.8),
-      rgba(51, 235, 117, 1));
+      rgba(0, 255, 59, 0.6),
+      rgba(0, 255, 59, 0.52));
+      text-align: center;
+
   }
 .hero {
   text-align: left;
-  margin: 2em;
+  margin-top: 3em
 }
 .hero img {
-  width: 250px;
+  width: 300px;
   float: right;
+  align-self: flex-end;
 }
 .hero h1 {
   font-size: 3em;
+  margin: 40px;
 }
 .hero p {
-  width: 60%;
+  font-size: 1.5em;
+  margin: 20px;
+  margin-left: 80px;
+  width: 100%;
 }
+
+.action-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  background: #57E98D;
+  padding: 1em 2em;
+  border-radius: 40px;
+  margin-top: 50px;
+  margin-left: 150px;
+  transition: 0.3s;
+}
+.action-btn:hover {
+  box-shadow: 0 10px 50px rgba(170,172,186,1)
+}
+
 footer ul {
   max-width: 960px;
-  margin: 0;
-  padding: 1em 0;
+  margin-left: 150px;
+  padding: 0;
+
 }
 svg {
   width: 100%;
 }
-
-
 
 
 }
