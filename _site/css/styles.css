@@ -3,10 +3,11 @@
 body {
   font-family: sans-serif;
   background: #E5E5EA;
+
 }
 .content {
   grid-area: content;
-  background-image: image("Group8.png");
+  background: url("anotherViewDid.png"), url("Group8.png");
 }
 .sidebar {
   grid-area: sidebar;
@@ -33,12 +34,14 @@ body {
     "content"
     "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 130px 800px 250px;
+  grid-gap: 20px;
+  grid-template-rows: 180px 1fr 250px;
 }
 
 .content,
 .sidebar,
 .footer{
+
   padding: 1em;
 }
 nav ul {
@@ -50,13 +53,13 @@ nav ul {
 
 nav li {
   list-style: none;
-  padding: 1em 0;
+  padding: 1em;
 }
 
 nav li a {
   color: black;
-  font-weight: 700;
-  opacity: 0.6;
+  font-weight: 500;
+  opacity: 0.5;
   text-decoration: none;
   transition: 0.3s;
 }

@@ -12,6 +12,7 @@ body {
 .sidebar {
   grid-area: sidebar;
   background: linear-gradient(to right,
+    rgba(0, 255, 59, 0.6),
     rgba(47, 235, 112, 0.55),
     rgba(23, 142, 229, 0.76));
     justify-content:center;)
@@ -19,13 +20,14 @@ body {
 .footer {
   grid-area: footer;
   background: linear-gradient(to right,
+    rgba(0, 255, 59, 0.6),
     rgba(47, 235, 112, 0.55),
     rgba(23, 142, 229, 0.76));
     justify-content:center;)
 
 }
 .container {
-  font-size: 1.5em;
+  font-size: 2em;
   width: 100%;
   height: 100vh;
   display: grid;
@@ -34,15 +36,16 @@ body {
     "content"
     "footer";
   grid-template-columns: 1fr;
-  grid-gap: 20px;
-  grid-template-rows: 180px 1fr 250px;
+  grid-gap: 0px;
+  grid-template-rows: 140px 1fr 250px;
 }
 
 .content,
 .sidebar,
 .footer{
 
-  padding: 1em;
+  padding: 0;
+  grid-template-columns: 1fr;
 }
 nav ul {
   margin: 0;
@@ -53,7 +56,7 @@ nav ul {
 
 nav li {
   list-style: none;
-  padding: 1em;
+  padding: 2em;
 }
 
 nav li a {
