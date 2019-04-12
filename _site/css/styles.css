@@ -15,23 +15,29 @@ body {
 }
 .content {
   grid-area: content;
+  font-size: 1.3em;
   background: url("anotherViewDid.png"), url("Group8.png");
 }
 .sidebar {
+  position: fixed;
+  width: 100%;
   grid-area: sidebar;
+  text-transform: uppercase;
   background: linear-gradient(to right,
     rgba(0, 255, 59, 0.6),
     rgba(47, 235, 112, 0.55),
     rgba(23, 142, 229, 0.76));
-    justify-content:center;)
+  justify-content:center;
+  transition: .3s;
 }
 .footer {
+  position: relative;
   grid-area: footer;
   background: linear-gradient(to right,
     rgba(0, 255, 59, 0.6),
     rgba(47, 235, 112, 0.55),
     rgba(23, 142, 229, 0.76));
-    justify-content:center;)
+  justify-content: center;
 
 
 }
@@ -46,7 +52,7 @@ body {
     "footer";
   grid-template-columns: 1fr;
   grid-gap: 0px;
-  grid-template-rows: 80px 1fr 120px;
+  grid-template-rows: 100px 1fr 120px;
 }
 
 .content,
@@ -58,7 +64,7 @@ body {
 
 }
 nav ul {
-  margin: 0;
+  margin: 40px;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -66,11 +72,11 @@ nav ul {
 
 nav li {
   list-style: none;
-  margin-top: 20px;
-  padding: 1em;
+
 }
 
 nav li a {
+  margin: 20px 5px;
   color: black;
   font-weight: 600;
   opacity: 0.5;
@@ -126,6 +132,7 @@ nav li a:hover {
   max-width: 960px;
   height: 100vh;
   margin: auto;
+  padding-top: 80px;
   text-align: center;
   scroll-snap-align: start;
 }
@@ -133,6 +140,7 @@ nav li a:hover {
   max-width: 960px;
   height: 100vh;
   margin: auto;
+  padding-top: 80px;
   text-align: center;
   scroll-snap-align: start;
 }
@@ -140,6 +148,7 @@ nav li a:hover {
   max-width: 960px;
   height: 100vh;
   margin: auto;
+  padding-top: 80px;
   text-align: center;
   scroll-snap-align: start;
 }
@@ -147,6 +156,7 @@ nav li a:hover {
   max-width: 960px;
   height: 100vh;
   margin: auto;
+  padding-top: 80px;
   text-align: center;
   scroll-snap-align: start;
 }
@@ -176,9 +186,11 @@ footer p {
   font-size: 1em;
 }
 
+
 @media (min-width: 1025px) {
+
   .container {
-    font-size: 1.6em;
+
     width: 100%;
     height: 100vh;
     display: grid;
@@ -190,6 +202,12 @@ footer p {
     grid-gap: 0px;
     grid-template-rows: 120px 1fr 150px;
 
+
+  }
+
+  .content {
+    font-size: 1.6em;
+    padding-top: 0px;
 
   }
 }
@@ -276,8 +294,9 @@ svg {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
   .container {
-    font-size: 1.4em;
+
     width: 100%;
     height: 100vh;
     display: grid;
@@ -291,3 +310,8 @@ svg {
 
 
   }
+  .content {
+      font-size: 1.4em;
+  }
+
+}
