@@ -638,7 +638,7 @@ svg {
 
   nav li a:hover {
     color: grey;
-    opacity: 0.1;
+    opacity: 0.5;
     transition: 0.3s;
   }
 
@@ -768,11 +768,14 @@ svg {
 
 
 #nav:checked + .nav-btn {
+      background-color: #7E7E7E;
+
+
       transform: rotate(45deg);
+
 }
 
 #nav:checked + .nav-btn i {
-      background: #000;
       transition: transform 0.2s ease;
 }
 
@@ -790,14 +793,34 @@ svg {
 
 #nav:checked ~ .nav-wrapper {
       z-index: 9990;
-      opacity: 0.95;
+      opacity: 0.97;
 }
-
+/* TEXT COLOR */
 #nav:checked ~ .nav-wrapper ul li a {
       opacity: 1;
       transform: translateX(0);
 }
+/*
+.nav-btn:focus ~ .nav-wrapper, .nav-btn:hover {
+  transform: translateX(-300px);
+}
 
+
+
+ .nav-btn-close {
+  background: transparent;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.nav-btn-close::before {
+  -webkit-transform: translateY(-6px) rotate(45deg);
+          transform: translateY(-6px) rotate(45deg);
+}
+.nav-btn-close::after {
+  -webkit-transform: translateY(6px) rotate(-45deg);
+          transform: translateY(6px) rotate(-45deg);
+}
+*/
 .hidden {
       display: none;
 }

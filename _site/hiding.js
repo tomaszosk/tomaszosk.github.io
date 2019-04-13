@@ -1,21 +1,26 @@
-var button = document.getElementById('hamburger-menu'),
-    span = button.getElementsByTagName('span')[0];
+// var button = document.getElementById('sidebar'),
+//     span = button.getElementsByTagName('span')[0];
+//
+// button.onclick =  function() {
+//   span.classList.toggle('nav-btn-close');
+// };
+//
+// $('.nav-btn').on('click', toggleOnClass);
+//
+// function toggleOnClass(event) {
+//   var toggleElementId = '#' + $(this).data('toggle'),
+//   element = $(toggleElementId);
+//
+//   element.toggleClass('on');
+//
+// }
+//
+// // close hamburger menu after click a
+// $( '.nav-wrapper li a' ).on("click", function(){
+//   $('.nav-btn').click();
+// });
 
-button.onclick =  function() {
-  span.classList.toggle('hamburger-menu-button-close');
-};
-
-$('#hamburger-menu').on('click', toggleOnClass);
-
-function toggleOnClass(event) {
-  var toggleElementId = '#' + $(this).data('toggle'),
-  element = $(toggleElementId);
-
-  element.toggleClass('on');
-
-}
-
-// close hamburger menu after click a
-$( '.menu li a' ).on("click", function(){
-  $('#hamburger-menu').click();
-});
+// // close hamburger menu after click a
+// $('.nav-wrapper li a').on("click", function(){
+//   $('.nav-btn').click();
+// });
