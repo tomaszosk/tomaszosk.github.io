@@ -632,15 +632,14 @@ svg {
     font-weight: 600;
     opacity: 1;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.3s;
   }
 
 
   nav li a:hover {
-    opacity: grey;
-
-    color: black;
-    transition: 0.5s;
+    color: grey;
+    opacity: 0.1;
+    transition: 0.3s;
   }
 
 
@@ -695,14 +694,7 @@ svg {
             margin-right: 40px;
             margin-bottom: 50px;
       }
-/*      nav ul li:not(:first-child) {
-            margin-left: 48px;
-      }
 
-      nav ul li:last-child {
-            margin-right: 24px;
-      }
-*/
       .nav-wrapper ul li:nth-child(1) a {
             transition-delay: 0.2s;
       }
@@ -731,7 +723,7 @@ svg {
 
       .nav-wrapper ul li a {
             padding: 40px 24px;
-            opacity: 0;
+            opacity: 0.1;
             color: #000;
             font-size: 25px;
             font-weight: 600;
