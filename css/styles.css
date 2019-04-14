@@ -16,7 +16,7 @@ body {
 }
 .content {
   grid-area: content;
-  font-size: 1.3em;
+
   background: url("anotherViewDid.png"), url("Group8.png");
 }
 .sidebar {
@@ -341,6 +341,48 @@ nav li a:hover {
 }
 .action-btn:hover {
   box-shadow: 0 10px 50px rgba(170,172,186,1)
+}
+.get-to-know-me {
+  max-width: 960px;
+  height: 100vh;
+  margin: auto;
+  padding-top: 5px;
+  text-align: center;
+  scroll-snap-align: start;
+  background: url(Me_GrandCanyon.png);
+  background-size: cover;
+}
+.get-to-know-me-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: fill;
+
+}
+.get-to-know-me-text {
+  position: relative;
+  float: right;
+  width: 50%;
+  height: 50%;
+  text-align: right;
+  background-color: white;
+  opacity: 0.9;
+  margin-top: 20%;
+}
+.get-to-know-me h2 {
+
+  opacity: 1;
+  text-align: center;
+font-weight: 300;
+line-height: 1.8em;
+color: black;
+}
+.get-to-know-me p {
+
+text-align: left;
+  opacity: 1;
+font-weight: 300;
+line-height: 1.8em;
+color: black;
 }
 
 .skills {
