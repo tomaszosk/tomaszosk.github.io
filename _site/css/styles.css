@@ -321,7 +321,7 @@ nav li a:hover {
   box-shadow: 0 10px 50px rgba(170,172,186,1)
 }
 
-.get-to-know-me {
+/* .get-to-know-me {
   width: 100%;
   height: 100vh;
 
@@ -344,7 +344,7 @@ nav li a:hover {
         rgba(255, 255, 255, 0.9),
         rgba(255, 255, 255, 0)
     100%); */
-    background: rgba(255, 255, 255, 0.9);
+  /*  background: rgba(255, 255, 255, 0.9);
   opacity: 1;
   border-radius: 40px;
   margin: 0 20px;
@@ -368,7 +368,7 @@ text-align: center;
 font-weight: 200;
 line-height: 1em;
 color: black;
-}
+} */
 
 .skills {
   width: 100%;
