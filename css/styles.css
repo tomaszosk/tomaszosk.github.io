@@ -379,7 +379,8 @@ color: black;
   scroll-snap-align: start;
 }
 .skills h1 {
-  margin-top: 50px;
+  margin-top: 60px;
+  margin-bottom: 0;
 }
 .skills-diagram img {
 
@@ -392,10 +393,12 @@ color: black;
 .skills-certificate {
   display: none;
 }
-.skills-description {
+.skills h2 {
 
-  padding-top: 50px;
-  font-size: 1.3em;
+  margin-top: 225px;
+  padding: 0 15px;
+  font-size: 1.1em;
+  line-height: 1.3em;
 }
 .experience {
   margin-top: 60px;
