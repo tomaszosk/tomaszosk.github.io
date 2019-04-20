@@ -61,7 +61,7 @@
               <img src="/assets/SkillsDiagram.png">
             </div>
             <div class="skills-certificate">
-              <img src="assets/SwiftCertificate.png" width="100" height="200">
+              <img src="assets/SwiftCertificate.png">
             </div>
 
             <h2>I started being interested in Apple's ecosystem with my first iPod.<br><br><p>Curiosity of how things work pushed me deeper in the system and a will to try coding myself just came naturally.</p><br><p>The best thing? I can run and test apps now on my own device : )</p></h2>
@@ -72,15 +72,17 @@
         <section class="experience" id="experience">
 
           <h1>My experience:</h1>
-
+          <div class="accordionItem close">
           <button class="accordion" type="button">10.2017 - now: Engineering student at Warsaw University of Technology</button>
           <div class="panel">
             Text
           </div>
+        </div>
 
+        <div class="accordionItem close">
                 <button class="accordion" type="button">4.2017 - 10.2017: Software QA at Lionbridge, Warsaw, Poland</button>
                 <div class="panel">
-                  <ul>Tasks:
+                  <ul>
                     <li>Functionality testing of components within the game</li>
                     <li>Types of testing: Exploratory, Regression and Performance tests</li>
                     <li>Reporting defects in Jira database</li>
@@ -91,10 +93,12 @@
                   <br>
                   <h2>Technologies used:</h2><b><h3>Atlassian: Jira, Confluence</h3></b>
                 </div>
+                </div>
 
+                <div class="accordionItem close">
                 <button class="accordion" type="button">8.2015 - 4.2017: Software QA at Testronic, Warsaw, Poland</button>
                 <div class="panel">
-                  <ul>Tasks:
+                  <ul>
                     <li>Performing functionality and compliance tests</li>
                     <li>Reporting defects in Jira, Mantis and Hansoft databases</li>
                     <li>Validating if the software meets prescribed standards</li>
@@ -105,18 +109,21 @@
                   <br>
                   <h2>Technologies used:</h2><b><h3>Atlassian Jira, Mantis, Trello, Hansoft, Black box tests</h3></b>
                 </div>
+                </div>
 
+                <div class="accordionItem close">
                 <button class="accordion" type="button">Summers of 2016, 2018 & 2019: Games operator in an amusement park, Santa Cruz, CA, USA</button>
                 <div class="panel">
-                  <ul>Tasks:
+                  <ul>
                     <li>Operating amusement games</li>
                     <li>Interacting with guests in a positive and friendly and firm, manner</li>
                     <li>Cash handling</li>
                     <li>Presenting positive attitude</li>
                   </ul>
                 </div>
+                </div>
 
-                <div class="closeAll">Close all before scrolling down : )<div>
+
 
         </section>
 
@@ -287,23 +294,38 @@ $('a[href*="#"]')
 
 </script>
 <script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
+  // var acc = document.getElementsByClassName("accordion");
+  // var i;
+  //
+  // for(i = 0;i <acc.length; i++) {
+  //   acc[i].onclick = function() {
+  //     this.classList.toggle("active");
+  //
+  //     var panel = this.nextElementSibling;
+  //
+  //     if(panel.style.maxHeight) {
+  //       panel.style.maxHeight = null;
+  //
+  //     } else {
+  //       panel.style.maxHeight = panel.scrollHeight + "px";
+  //     }
+  //   }
+  // }
 
-  for(i = 0;i <acc.length; i++) {
-    acc[i].onclick = function() {
-      this.classList.toggle("active");
-
-      var panel = this.nextElementSibling;
-
-      if(panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      }
+  var accItem = document.getElementsByClassName('accordionItem');
+    var accHD = document.getElementsByClassName('accordion');
+    for (i = 0; i < accHD.length; i++) {
+        accHD[i].addEventListener('click', toggleItem, false);
     }
-  }
+    function toggleItem() {
+        var itemClass = this.parentNode.className;
+        for (i = 0; i < accItem.length; i++) {
+            accItem[i].className = 'accordionItem close';
+        }
+        if (itemClass == 'accordionItem close') {
+            this.parentNode.className = 'accordionItem open';
+        }
+    }
 </script>
 
 </body>
