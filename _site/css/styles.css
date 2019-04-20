@@ -119,7 +119,10 @@ nav {
 nav li a {
   color: black;
   width: 100%;
+  height: 60px;
   font-weight: 400;
+  font-size: 0.5em;
+  line-height: 0.5em;
   opacity: 1;
   text-decoration: none;
   transition: 0.3s;
@@ -132,6 +135,9 @@ nav li a:hover {
   transition: 0.3s;
 }
 
+nav-wrapper {
+  height: 60px;
+}
 
 .logo {
   display: block;
@@ -152,7 +158,7 @@ nav li a:hover {
   text-decoration: none;
 }
 
-.nav-wrapper {
+/* .nav-wrapper {
   margin: 0;
   padding: 0;
   position: fixed;
@@ -164,9 +170,9 @@ nav li a:hover {
   background: #E5E5EA;
   opacity: 0;
   transition: all 0.2s ease;
-}
+} */
 
-.nav-wrapper ul {
+/* .nav-wrapper ul {
   position: absolute;
   top: 50%;
   display: inline-block;
@@ -181,10 +187,8 @@ nav li a:hover {
   width: 100%;
   text-align: right;
   margin: 20px 0;
-  /* margin-right: 40px;
-  margin-bottom: 50px; */
-}
-
+} */
+/*
 .nav-wrapper ul li:nth-child(1) a {
   transition-delay: 0.2s;
 }
@@ -273,11 +277,11 @@ nav li a:hover {
   z-index: 9990;
   opacity: 0.95;
 }
-/* TEXT COLOR */
+
 #nav:checked ~ .nav-wrapper ul li a {
   opacity: 1;
   transform: translateX(0);
-}
+} */
 
 
 .hero {
@@ -321,55 +325,6 @@ nav li a:hover {
   box-shadow: 0 10px 50px rgba(170,172,186,1)
 }
 
-/* .get-to-know-me {
-  width: 100%;
-  height: 100vh;
-
-  text-align: center;
-  scroll-snap-align: start;
-  background: url(Me_GrandCanyon.png);
-  background-size: cover;
-}
-.get-to-know-me-img {
-  width: 100%;
-  height: 100vh;
-  object-fit: fill;
-}
-.get-to-know-me-text {
-  float: center;
-  width: 80%;
-  height: 20%;
-  text-align: center;
-  /* background-image: linear-gradient(to bottom,
-        rgba(255, 255, 255, 0.9),
-        rgba(255, 255, 255, 0)
-    100%); */
-  /*  background: rgba(255, 255, 255, 0.9);
-  opacity: 1;
-  border-radius: 40px;
-  margin: 0 20px;
-  margin-top: 400px;
-
-}
-.get-to-know-me h2 {
-
-  opacity: 1;
-  text-align: center;
-font-weight: 300;
-line-height: 2em;
-color: black;
-margin-top: 30px;
-}
-.get-to-know-me p {
-
-margin: 20px;
-text-align: center;
-  opacity: 1;
-font-weight: 200;
-line-height: 1em;
-color: black;
-} */
-
 .skills {
   width: 100%;
   height: 100vh;
@@ -398,7 +353,7 @@ color: black;
   margin-top: 225px;
   padding: 0 15px;
   font-size: 1.1em;
-  line-height: 1.3em;
+  line-height: 1.1em;
 }
 .experience {
   margin-top: 60px;
@@ -409,36 +364,72 @@ color: black;
   scroll-snap-align: start;
 }
 .experience h1 {
-  margin-top: 50px;
-}
-.experience-accordion {
-  width: 100%;
-}
-.experience-header {
-  display: block;
-  padding: 15px 20px;
-  background: #bbb;
-  color: #fff;
-  text-decoration: none;
-  /* font-size: 1.3em;
-  text-transform: uppercase; */
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-  margin-bottom: 5px;
-}
-.experience-description h3 {
-  margin: 0 0 20px 0;
-}
-.experience-description {
-  padding: 0;
-  height: 0;
-  overflow: hidden;
-}
-.experience-description:target {
-  height: auto;
-  padding: 10px;
-  
+  margin-top: 60px;
 }
 
+button.accordion {
+  margin: 2px;
+  background: rgba(47, 235, 112, 0.55);
+  color: #000;
+  cursor: pointer;
+  border: 0px;
+  padding: 8px;
+  width: 90%;
+  text-align: left;
+  font-size: 15px;
+  transition: .4s;
+  border-radius: 15px;
+    opacity: 0.9;
+}
+button:focus {
+  outline: none;
+}
+button.accordion.active, button.accordion:hover {
+  background: rgba(23, 142, 229, 0.70);
+}
+.accordion:after {
+  position: static;
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+}
+div.panel {
+  padding: 0 8px;
+  color: #000;
+  max-height: 0;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  transition: max-height .5s ease-out;
+  font-size: 14px;
+  text-align: left;
+}
+.experience li {
+  list-style-position: inside;
+  list-style-type: circle;
+  line-height: 1.2em;
+}
+.closeAll {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  background: #57E98D;
+  padding: 0.7em 2em;
+  border-radius: 40px;
+  font-size: 14px;
+  margin: 10% 0;
+  transition: 0.3s;
+}
+.closeAll {
+  box-shadow: 0 10px 50px rgba(170,172,186,1)
+}
 
 /*.experience ul li {
   font-size: 0.7em;
