@@ -287,7 +287,7 @@ nav-wrapper {
   width: 100%;
   height: 100vh;
   text-align: center;
-  scroll-snap-align: start;
+
 }
 .hero img {
   margin-top: 60px;
@@ -334,40 +334,53 @@ nav-wrapper {
 
   padding-top: 5px;
   text-align: center;
-  scroll-snap-align: start;
+
 }
-.skills h1 {
+/* .skills h1 {
   margin-top: 60px;
   margin-bottom: 0;
+} */
+.skills h1 {
+  margin: 10px;
+  height: 50px;
+  width: auto;
+}
+.skills h1 svg {
+  width: 50px;
+  height: 50px;
 }
 .skills-diagram img {
 
   width: 100%;
   height: auto;
 
-  margin-right: 20px;
+  margin: 20px auto;
   float: left;
 }
 .skills-certificate {
   display: none;
 }
 .skills h2 {
-
-  margin-top: 225px;
+  margin: 30px auto;
   padding: 0 15px;
   font-size: 1.1em;
   line-height: 1.1em;
 }
 .experience {
-  margin-top: 60px;
+  margin-top: 0px;
   width: 100%;
   height: 100vh;
   padding-top: 5px;
   text-align: center;
-  scroll-snap-align: start;
 }
 .experience h1 {
-  margin-top: 60px;
+  margin: 10px;
+  height: 50px;
+  width: auto;
+}
+.experience h1 svg {
+  width: 50px;
+  height: 50px;
 }
 
 button.accordion {
@@ -412,9 +425,10 @@ border-radius: 3px;
     display:block;
 }
 .open .panel {
-    width: 85%;
+    width: 80%;
     margin: 0px auto;
     text-align: left;
+    line-height: 1.2em;
     display:block;
     -webkit-transform: scaleY(1);
 	-o-transform: scaleY(1);
@@ -474,7 +488,8 @@ border-radius: 3px;
 .workspace-svg {
   width: 90%;
   height: auto;
-  margin: auto;
+  margin: 10px auto;
+  /* margin: auto; */
 }
 .workspace-svg svg {
   display: block;
@@ -486,14 +501,15 @@ border-radius: 3px;
 .projects {
   margin-top: 60px;
   width: 100%;
-  height: 100vh;
+  height: 130vh;
   margin: 0;
   padding-top: 5px;
 
-  scroll-snap-align: start;
+
 }
 .projects h1 {
     margin-top: 50px;
+    text-align: center;
 }
 .project-text-box {
   float: left;
@@ -511,8 +527,8 @@ border-radius: 3px;
   font-size: 1em;
 }
 .image-area {
-  height: 100px;
-  width: 50%;
+  height: auto;
+  width: 100%;
   overflow: hidden;
 }
 .image-area img {
@@ -531,7 +547,7 @@ border-radius: 3px;
   height: 100vh;
   padding-top: 5px;
   text-align: center;
-  scroll-snap-align: start;
+
   background: url(Me_GrandCanyon.png);
   background-size: cover;
 }
