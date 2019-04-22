@@ -572,7 +572,7 @@ border-radius: 3px;
 }
 
 .interests {
-  margin-top: 80px;
+  margin-top: 140px;
   width: 100%;
   height: 100vh;
   padding-top: 5px;
@@ -1164,7 +1164,7 @@ footer p {
     width: 100%;
   }
   .interests {
-    margin-top: 140px;
+    margin-top: 220px;
     width: 100%;
     height: 100vh;
     padding-top: 5px;
@@ -1187,7 +1187,7 @@ footer p {
     object-fit: fill;
   }
   .interests p {
-    margin-top: 85%;
+    margin-top: 310px;
     padding: 8px;
     width: 90%;
     height: 35%;
