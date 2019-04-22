@@ -595,7 +595,8 @@ border-radius: 3px;
   object-fit: fill;
 }
 .interests p {
-  margin-top: 65%;
+  margin-top: 200px;
+  margin-bottom: 5px;
   padding: 8px;
   width: 90%;
   height: 35%;
@@ -1187,7 +1188,8 @@ footer p {
     object-fit: fill;
   }
   .interests p {
-    margin-top: 310px;
+    margin-top: 300px;
+    margin-bottom: 5px;
     padding: 8px;
     width: 90%;
     height: 35%;
