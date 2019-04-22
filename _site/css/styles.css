@@ -1473,6 +1473,213 @@ footer p {
 }
 
 @media (min-width: 414px) and (max-width : 480px) {
+
+  .container {
+    background: url("anotherViewDid.png"), url("Group8.png");
+    object-fit: fill;
+    grid-template-rows: 1fr 200px;
+  }
+  .sidebar {
+    height: 65px;
+  }
+  .logo {
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .logo a {
+    font-size: 30px;
+  }
+  .hero img {
+    margin-top: 80px;
+    width: 200px;
+    height: 200px;
+  }
+  .hero h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+  }
+  .hero p {
+    /* margin: 15px 0; */
+    font-size: 1.9em;
+    font-weight: 200;
+    line-height: 1.3em;
+    margin: 20px 20px;
+    margin-bottom: 0;
+    color: #434141;
+  }
+  .action-btn {
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+  .skills h1 {
+    margin: 0;
+    height: 60px;
+    width: auto;
+  }
+  .skills h1 svg {
+    width: 60px;
+    height: 60px;
+
+  }
+  .skills-diagram img {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    float: left;
+  }
+  .skills h2 {
+    margin: 30px auto;
+    padding: 0 15px;
+    font-size: 1.55em;
+    line-height: 1.1em;
+  }
+  .experience {
+    margin-top: 0px;
+    width: 100%;
+    height: 120vh;
+    padding-top: 5px;
+    text-align: center;
+  }
+  .experience h1 {
+    margin: 0;
+    height: 50px;
+    width: auto;
+  }
+  .experience h1 svg {
+    width: 50px;
+    height: 50px;
+  }
+  button.accordion {
+    font-size: 17px;
+  }
+  .experience li {
+  line-height: 1.2em;
+  }
+  .workspace-svg {
+
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    /* margin: auto; */
+  }
+  .workspace-svg svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    float: right;
+  }
+  .clip-warning {
+    display: none;
+  }
+  .projects {
+
+    width: 100%;
+    height: 130vh;
+    padding-top: 5px;
+
+
+  }
+  .projects h1 {
+    padding: 0;
+    margin: 0;
+      text-align: center;
+  }
+  .project-text-box {
+    text-align: left;
+    height: 30%;
+
+  }
+  .project-text-box-content {
+    padding: 4% 8%;
+  }
+  .project-text-box-content p {
+    line-height: 1em;
+    color: #616569;
+    letter-spacing: .03em;
+    font-size: 1.2em;
+  }
+  .project-text-box1 {
+    display: inline-inline-block;
+
+    font-size: 1.1em;
+  }
+  .project-text-box2 {
+    font-size: 1.1em;
+  }
+  .project-text-box3 {
+    font-size: 1.1em;
+  }
+  .image-area1 {
+    margin-top: 5px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+  .image-area1 img {
+    width: 100%;
+  }
+  .image-area2 {
+    margin-top: 5px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+  .image-area2 img {
+    width: 100%;
+  }
+  .interests {
+    margin-top: 110px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 5px;
+    text-align: center;
+
+    background: url(Me_GrandCanyon.png);
+    background-size: cover;
+  }
+  .interests h1 {
+      margin-top: 60px;
+      background-color: rgba(255, 255, 255, 0.8);
+      opacity: 0.65;
+      width: 100%;
+  }
+  .interests img {
+    display: none;
+    margin-top: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+  }
+  .interests p {
+    margin-top: 75%;
+    padding: 8px;
+    width: 90%;
+    height: 50%;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+    border-radius: 20px;
+  }
+  .interests svg {
+    margin-top: 5px;
+    height: 35px;
+    width: auto;
+  }
+  .footer-reach {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .social {
+    width: 90%;
+    margin: 0 10px 40px 10px;
+    position: relative;
+  }
+  .username {
+    display: none;
+  }
 }
 
 @media (min-width: 481px) and (max-width : 767px) {
