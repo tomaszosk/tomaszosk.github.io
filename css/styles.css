@@ -91,15 +91,19 @@ h1 svg {
 }
 .sidebar {
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
   width: 100%;
   text-transform: uppercase;
   background: linear-gradient(to right,
     rgba(0, 255, 59, 0.6),
     rgba(47, 235, 112, 0.55),
     rgba(23, 142, 229, 0.76));
-  justify-content: center;
-  transition: .3s;
+    height: 50px
+
 }
+
 .footer {
   position: relative;
   grid-area: footer;
@@ -131,32 +135,6 @@ h1 svg {
   width: 100%;
   font-size: 1em;
 }
-.sidebar {
-  display: fixed;
-}
-
-nav li a {
-  color: black;
-  width: 100%;
-  height: 60px;
-  font-weight: 400;
-  font-size: 0.5em;
-  line-height: 0.5em;
-  opacity: 1;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-
-nav li a:hover {
-  color: grey;
-  opacity: 0.5;
-  transition: 0.3s;
-}
-
-nav-wrapper {
-  height: 60px;
-}
 
 .logo {
   display: block;
@@ -177,132 +155,17 @@ nav-wrapper {
   text-decoration: none;
   text-shadow: 2px 2px 5px #fff;
 }
-
-.nav-wrapper {
-/* .nav-wrapper {
-  margin: 0;
-  padding: 0;
+.scroll-line {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: #E5E5EA;
-  opacity: 0;
-  transition: all 0.2s ease;
-} */
-
-/* .nav-wrapper ul {
-  position: absolute;
-  top: 50%;
-  display: inline-block;
-  float: left;
-  transform: translateY(-50%);
-  width: 100%;
-}
-
-.nav-wrapper ul li {
-  display: block;
-  float: right;
-  width: 100%;
-  text-align: right;
-  margin: 20px 0;
-} */
-/*
-.nav-wrapper ul li:nth-child(1) a {
-  transition-delay: 0.2s;
-}
-.nav-wrapper ul li:nth-child(2) a {
-  transition-delay: 0.3s;
-}
-.nav-wrapper ul li:nth-child(3) a {
-  transition-delay: 0.4s;
-}
-.nav-wrapper ul li:nth-child(4) a {
-  transition-delay: 0.5s;
-}
-.nav-wrapper ul li:nth-child(5) a {
-  transition-delay: 0.6s;
-}
-.nav-wrapper ul li:nth-child(6) a {
-  transition-delay: 0.7s;
-}
-.nav-wrapper ul li:not(:first-child) {
-  margin-left: 0;
-}
-
-.nav-wrapper ul li a {
-  padding: 40px;
-  opacity: 0.1;
-  color: #000;
-  font-size: 25px;
-  font-weight: 600;
-  letter-spacing: 1.2px;
-  transform: translateX(-20px);
-  transition: all 0.2s ease;
-}
-.nav-list {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-.nav-btn {
-  position: fixed;
-  right: 4px;
-  top: 4px;
-  display: block;
-  width: 48px;
-  height: 48px;
-  cursor: pointer;
-  z-index: 9999;
-  border-radius: 50%;
-}
-.nav-btn i {
-  display: block;
-  width: 20px;
-  height: 2px;
-  background: #000;
-  border-radius: 2px;
-  margin-left: 14px;
-}
-.nav-btn i:nth-child(1) {
-  margin-top: 16px;
-}
-.nav-btn i:nth-child(2) {
-  margin-top: 4px;
-  opacity: 1;
-}
-.nav-btn i:nth-child(3) {
-  margin-top: 4px;
-}
-
-#nav:checked + .nav-btn {
-  background-color: #7E7E7E;
-  transform: rotate(45deg);
-}
-#nav:checked + .nav-btn i {
-  transition: transform 0.2s ease;
-}
-#nav:checked + .nav-btn i:nth-child(1) {
-  transform: translateY(6px) rotate(180deg);
-}
-#nav:checked + .nav-btn i:nth-child(2) {
-  opacity: 0;
-}
-#nav:checked + .nav-btn i:nth-child(3) {
-  transform: translateY(-6px) rotate(90deg);
-}
-#nav:checked ~ .nav-wrapper {
-  z-index: 9990;
-  opacity: 0.95;
-}
-
-#nav:checked ~ .nav-wrapper ul li a {
-  opacity: 1;
-  transform: translateX(0);
-} */
+    display: block;
+     height: 2px;
+     margin-top: 48px;
+     background: linear-gradient(to right,
+       rgba(0, 0, 0, 0.8),
+       rgba(123, 50, 50, 1),
+       rgba(172, 47, 47, 1),
+       rgba(229, 0, 0, 1));
+     width: 0%;
 }
 
 .hero {
@@ -1016,6 +879,9 @@ footer p {
   .sidebar {
     height: 60px;
   }
+  .scroll-line {
+       margin-top: 58px;
+  }
   .logo {
     padding: 10px;
     margin-left: 10px;
@@ -1223,6 +1089,9 @@ footer p {
   .sidebar {
     display: block;
     height: 50px;
+  }
+  .scroll-line {
+       margin-top: 48px;
   }
   .logo {
     margin-top: 6px;
@@ -1484,6 +1353,9 @@ footer p {
   .sidebar {
     height: 65px;
   }
+  .scroll-line {
+       margin-top: 63px;
+  }
   .logo {
     padding: 10px;
     margin-left: 10px;
@@ -1688,6 +1560,9 @@ footer p {
   .sidebar {
     display: block;
     height: 50px;
+  }
+  .scroll-line {
+       margin-top: 48px;
   }
   .logo {
     margin-top: 6px;
@@ -1946,6 +1821,9 @@ footer p {
     display: block;
     height: 50px;
   }
+  .scroll-line {
+       margin-top: 48px;
+  }
   .logo {
     margin-top: 6px;
   }
@@ -2199,6 +2077,9 @@ footer p {
   .sidebar {
     display: block;
     height: 50px;
+  }
+  .scroll-line {
+       margin-top: 48px;
   }
   .logo {
     margin-top: 6px;

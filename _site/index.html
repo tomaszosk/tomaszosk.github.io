@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="normalize/normalize.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="hiding.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,28 +18,29 @@
 
     <div class="container">
       <div class="sidebar" id="sidebar">
-        <nav>
-            <input type="checkbox" id="nav" class="hidden">
+
+            <!-- <input type="checkbox" id="nav" class="hidden">
             <label for="nav" class="nav-btn">
               <i></i>
               <i></i>
               <i></i>
-            </label>
+            </label> -->
             <div class="logo">
                 <a href="#sidebar">My Portfolio</a>
               </div>
-            <div class="nav-wrapper">
+              <div class="scroll-line"></div>
+            <!-- <div class="nav-wrapper">
 
               <ul class="nav-list">
-                <!-- <li><a href="#content">About</a></li>
+                <li><a href="#content">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">My experience</a></li>
                 <li><a href="#projects">Achievements</a></li>
                 <li><a href="#interests">Interests</a></li>
-                <li><a href="#contact">Contact</a></li> -->
+                <li><a href="#contact">Contact</a></li>
               </ul>
-            </div>
-          </nav>
+            </div> -->
+          
       </div>
       <div class="content" id="content">
 
@@ -784,6 +786,19 @@ $('a[href*="#"]')
             this.parentNode.className = 'accordionItem open';
         }
     }
+</script>
+
+<script type="text/javascript">
+
+$(window).scroll(function() {
+var wintop = $(window).scrollTop(), docheight =
+
+$(document).height(), winheight = $(window).height();
+var scrolled = (wintop/(docheight-winheight))*100;
+
+$('.scroll-line').css('width', (scrolled + '%'));
+});
+
 </script>
 
 </body>
