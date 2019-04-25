@@ -19,16 +19,50 @@
     <div class="container">
       <div class="sidebar" id="sidebar">
 
+
+        <nav>
+              <!-- <span id="brand">
+                    <a href="index.html">Brand</a>
+              </span> -->
+              <div class="logo" id="logo">
+                  <a href="indext.html">My Portfolio</a>
+                </div>
+                <div class="scroll-line"></div>
+
+              <ul id="menu">
+                <li><a href="#content">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">My Achievements</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+
+              <div id="toggle">
+                    <div class="span" id="one"></div>
+                    <div class="span" id="two"></div>
+                    <div class="span" id="three"></div>
+              </div>
+
+        </nav>
+        <div id="resize">
+              <ul id="menu">
+                <li><a href="#content">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">My Achievements</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+        </div>
+
             <!-- <input type="checkbox" id="nav" class="hidden">
             <label for="nav" class="nav-btn">
               <i></i>
               <i></i>
               <i></i>
             </label> -->
-            <div class="logo">
-                <a href="#sidebar">My Portfolio</a>
-              </div>
-              <div class="scroll-line"></div>
+
             <!-- <div class="nav-wrapper">
 
               <ul class="nav-list">
@@ -40,7 +74,7 @@
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </div> -->
-          
+
       </div>
       <div class="content" id="content">
 
@@ -798,6 +832,17 @@ var scrolled = (wintop/(docheight-winheight))*100;
 
 $('.scroll-line').css('width', (scrolled + '%'));
 });
+
+</script>
+<script>
+
+$("#toggle").click(function() {
+
+$(this).toggleClass('on');
+$("#resize").toggleClass("active");
+
+});
+
 
 </script>
 
