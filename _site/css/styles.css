@@ -1006,7 +1006,7 @@ footer p {
 
   .social {
     width: 90%;
-    margin: 20px 10px 20px 10px;
+    margin: 20px auto;
     position: relative;
   }
   .credit {
@@ -1539,7 +1539,7 @@ footer p {
 
   .social {
     width: 90%;
-    margin: 20px 10px 20px 10px;
+    margin: 20px auto;
     position: relative;
   }
   .credit {
@@ -2047,7 +2047,7 @@ footer p {
 
   .social {
     width: 90%;
-    margin: 20px 10px 20px 10px;
+    margin: 20px auto;
     position: relative;
   }
   .credit {
@@ -2325,7 +2325,7 @@ footer p {
 
   .social {
     width: 90%;
-    margin: 20px 10px 20px 10px;
+    margin: 20px auto;
     position: relative;
   }
   .credit {
@@ -2608,7 +2608,7 @@ footer p {
 
   .social {
     width: 90%;
-    margin: 20px 10px 20px 10px;
+    margin: 20px auto;
     position: relative;
   }
   .credit {
@@ -2892,7 +2892,7 @@ footer p {
 
   .social {
     width: 90%;
-    margin: 20px 10px 20px 10px;
+    margin: 20px auto;
     position: relative;
   }
   .credit {
@@ -2904,6 +2904,10 @@ footer p {
   }
 }
 @media (min-width: 1651px) {
+  .container {
+    grid-template-rows: 1fr 430px;
+  }
+
   hr {
     margin-top: 0.1em;
     margin-bottom: 0.1em;
@@ -3127,7 +3131,7 @@ footer p {
     overflow: hidden;
   }
   .image-area2 img {
-    margin: 20px auto;
+    margin: 10px auto;
     width: 55%;
     float: right;
   }
@@ -3180,9 +3184,9 @@ footer p {
     margin-top: 80px;
     width: 100%;
     height: 100vh;
-    padding-top: 5px;
+    padding-top: 100px;
     text-align: center;
-
+    font-size: 2em;
     background: url(Me_GrandCanyon.png);
     background-size: cover;
   }
@@ -3202,8 +3206,8 @@ footer p {
   }
   .interests p {
     float: right;
-    margin-top: 29%;
-    margin-right: 5%;
+    margin-top: 17%;
+    margin-right: 2%;
     padding: 8px;
     width: 55%;
     height: 35%;
@@ -3216,18 +3220,42 @@ footer p {
   }
   .interests svg {
     margin-top: 5px;
-    height: 30px;
+    height: 75px;
     width: auto;
   }
+  .footer {
+    font-size: 3em;
+  }
   .footer-reach {
-    margin-top: 20px;
+    margin-top: 20px auto;
     margin-bottom: 10px;
   }
 
   .social {
     width: 90%;
-    margin: 20px 10px 20px 10px;
+    margin: 20px auto;
     position: relative;
+  }
+  .footer-snapchat svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer-mail svg {
+    width: 60px;
+    height: 60px;
+  }
+  .footer-messenger svg {
+    width: 60px;
+    height: 60px;
+  }
+  .footer-instagram svg {
+    width: 60px;
+    height: 60px;
+  }
+  .footer-github svg {
+    width: 60px;
+    height: 60px;
   }
   .credit {
 
