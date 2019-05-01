@@ -3024,7 +3024,7 @@ footer p {
     display: block;
     margin: 0px auto;
     padding: 40px;
-    width: 35%;
+    width: 33%;
     height: auto;
     float: left;
   }
@@ -3078,9 +3078,11 @@ footer p {
   .workspace-svg {
     width: 30%;
     height: auto;
-    margin: 50px 30%;
+    margin: 50px 33%;
   }
   .workspace-svg svg {
+    width: 1000px;
+    height: 1000px;
     display: block;
     max-width: 100%;
     height: auto;
@@ -3206,7 +3208,7 @@ footer p {
   }
   .interests p {
     float: right;
-    margin-top: 17%;
+    margin-top: 330px;
     margin-right: 2%;
     padding: 8px;
     width: 55%;
