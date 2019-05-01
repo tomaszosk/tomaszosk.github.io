@@ -2621,7 +2621,7 @@ footer p {
 }
 
 
-@media (min-width: 1367px) and (max-width : 1650px) {
+@media (min-width: 1368px) and (max-width : 1700px) {
   .sidebar {
     display: block;
     height: 50px;
@@ -2903,7 +2903,7 @@ footer p {
     display: block;
   }
 }
-@media (min-width: 1651px) {
+@media (min-width: 1701px) {
   .container {
     grid-template-rows: 1fr 430px;
   }
@@ -3081,8 +3081,8 @@ footer p {
     margin: 50px 33%;
   }
   .workspace-svg svg {
-    width: 1000px;
-    height: 1000px;
+    width: 800px;
+    height: 800px;
     display: block;
     max-width: 100%;
     height: auto;
