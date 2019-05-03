@@ -2351,6 +2351,18 @@ footer p {
   .logo a {
     font-size: 1.3em;
   }
+  #resize #menu li {
+        padding: 25px 0;
+        font-size: 50px;
+        min-height: 50px;
+  }
+  #resize li:nth-child(1) {
+        margin-top: 100px;
+  }
+  #menu a {
+        font-weight: 200;
+        font-size: 50px;
+  }
   .hero {
     font-size: 1.6em;
   }
